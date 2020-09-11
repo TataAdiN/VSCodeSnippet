@@ -2,5 +2,25 @@
     "Load Model of CodeIgniter" : {
         "prefix": "model",
         "body": "\\$this->load->model('M_$1', 'm$2');$0"
-    }
+    },
+    "Using loaded model of CodeIgniter" : {
+        "prefix": "tm",
+        "body": "\\$this->m$1->${2|(,showAll(,showByParentId(,createRow(,findById(, findId(|}$3);$0"
+    },
+    "Print variable from POST request - PHP var_dump()" : {
+        "prefix": "dpp",
+        "body": "echo var_dump(\\$this->input->post());$0"
+    },
+    "Print Variable - PHP var_dump()" : {
+        "prefix": "dp",
+        "body": "echo var_dump($1);$0"
+    },
+    "Render view using Blade" : {
+        "prefix": "render",
+        "body": "\\$this->blade->render('$1', \\$data $2);$0"
+    },
+    "Create Variable in Variable Data(Array) - CodeIgniter Variable" : {
+        "prefix": "data",
+        "body": "\\$data['$1'] = $2$0"
+    },
 }
