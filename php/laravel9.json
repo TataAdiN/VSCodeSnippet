@@ -1,0 +1,33 @@
+{
+	"php class constructor": {
+		"prefix": "cconst",
+		"body": [
+			"public function __construct(",
+			"\t$1",
+			"){",
+			"$2",
+			"}"
+		]
+	},
+	"php force array": {
+		"prefix": "farray",
+		"body": "(array) $1"
+	},
+	"php is empty": {
+		"prefix": "isempty",
+		"body": [
+			"if(",
+			"\tempty($1 $0)",
+			"){",
+			"}"
+		]
+	},
+	"laravel abort 404": {
+		"prefix": "abort404",
+		"body": "abort(404);"
+	},
+	"repository with function find": {
+		"prefix": "rfind",
+		"body": "\\$this->$1->find($2);"
+	}
+}
